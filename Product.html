@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E_commerce</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid p-2 ">
+            <a class="navbar-brand" href="#">E-Shopper</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">My
+                            Account</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Catogries
+                        </a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/Home.html#product-item">Cameras</a></li>
+                            <li><a class="dropdown-item" href="/Home.html#product-item">Drone</a></li>
+                            <li><a class="dropdown-item" href="/Home.html#product-item">Iphone</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/Home.html#product-item">Headphone</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html" tabindex="-1"><i class="bi bi-cart-plus-fill"></i> cart</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mx-lg-2 order-sm-last">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            My Account
+                        </a>
+                        <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item drop-hover" href="#" data-bs-toggle="modal"data-bs-target="#exampleModal">My Order</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"data-bs-target="#exampleModal">Profile</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"data-bs-target="#exampleModal">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex search-form">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- PRODUCT SECTION -->
+    <section>
+        <div class="container">
+            <div class="row d-flex flex-row mt-4">
+                <div class="col-md-5 product-img">
+                    <div>
+                        <img class="img-fluid " src="image/Hedphone-4-square.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2 product-small justify-content-center order-md-first">
+                    <img class="img-fluid .product-small " src="image/Hedphone-4-square.jpg" alt="">
+                    <img class="img-fluid .product-small " src="image/Hedphone-4-square.jpg" alt="">
+                    <img class="img-fluid .product-small " src="image/Hedphone-4-square.jpg" alt="">
+                </div>
+                <div class="col-md-5">
+                    <h6 class="text-uppercase text-secondary">Boat</h6>
+                    <h2 class="fs-3">Boat 151</h2>
+                    <h5>$100</h5>
+                    <div>Color:</div>
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-danger color-label" for="btnradio1">
+                            <i class="bi bi-check2"></i>
+                        </label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-success color-label" for="btnradio2">
+                            <i class="bi bi-check2"></i>
+
+                        </label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-dark color-label" for="btnradio3">
+                            <i class="bi bi-check2"></i>
+
+                        </label>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary w-100" id="toastTrigger"><i class="bi bi-cart-plus-fill"></i> Add To Cart</button>
+                    </div>
+                    <div class="mt-2"><b>Detail:</b></div>
+                    <div class="accordion accordion-flush" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Sound Quality:
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Boat headphones deliver powerful bass and clear treble, providing an 
+                                    immersive audio experience suitable for various music genres, movies, 
+                                    and podcasts, ensuring every detail is heard clearly.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Durability:
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Built with sturdy materials, Boat headphones are designed to withstand regular 
+                                    usage, making them ideal for daily wear, workouts, or travel without compromising 
+                                    on comfort or performance.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Affordability:
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Offering high-quality features at an accessible price point, Boat headphones strike 
+                                    a balance between cost and performance, making them a popular choice for budget-conscious 
+                                    consumers seeking good value.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+
+    <div class="container-fluid mt-4 bg-dark text-white">
+        <div class="container">
+            <div class="row pt-4 footer-item">
+                <div class="col">
+                    <h5>Categories</h5>
+                    <ul>
+                        <li>Watches</li>
+                        <li>Mobile</li>
+                        <li>Tablates</li>
+                        <li>Drone</li>
+                        <li>Audio</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Useful Link</h5>
+                    <ul>
+                        <li>Terms</li>
+                        <li>Privacy</li>
+                        <li>ABout us</li>
+                        <li>Mssion</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Get Update</h5>
+                    <div class="d-flex">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">My Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    You will need to login for check your Account
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" href="login.html" class="btn btn-primary">GO to Login></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Toast Trigger Button -->
+    <!-- <button type="button" class="btn btn-success" id="toastTrigger">
+        Show The Toast
+    </button> -->
+
+    <!-- Toast Container -->
+    <div class="toast-container top-0 start-0 p-4 position-fixed top-0 mt-4">
+        <div class="toast text-bg-success border-0" id="toastAlert">
+            <div class="d-flex  bg-primary">
+                <div class="toast-body">
+                    Item is successfully added to your cart.
+                </div>
+                <button
+                    type="button"
+                    class="btn-close btn-close-white me-2 m-auto"
+                    data-bs-dismiss="toast"
+                ></button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

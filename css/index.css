@@ -1,0 +1,142 @@
+
+/* nav */
+.search-form input, .search-form button{
+    border-radius: 0;
+}
+.nav-item :hover {
+    background-color: #ffffff33;
+}
+a.dropdown-item{
+    color:white;
+    text-decoration: none;
+}
+a.dropdown-item :hover{
+    color:black !important;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Front Product section */
+.carousel-inner img {
+    max-height: 450px; /* Adjust to your desired height */
+    object-fit: cover; /*Ensures the image fits well */
+}
+
+
+
+.rating-star{
+    color: rgb(207, 137, 50);
+}
+.Front-Product-img{
+    height: 250px;
+}
+
+
+
+/* offer section */
+.offer-percent{
+    font-size: 85px;
+    font-weight: 500;
+}
+.offer-btn{
+    border-radius: 20px;
+}
+
+
+
+/* footer section */
+
+.footer-item{
+    list-style: square;
+}
+
+
+
+
+
+
+/* ===========product page============= */
+
+
+.product-small img{
+    /* max-width: auto; */
+    padding: 10px;
+    /* height: 150px; */
+
+}
+.color-label{
+    border-radius: 50% !important;
+    margin: 5px;
+}
+.color-label i{
+    opacity: 0;
+}
+.btn-check:checked+.color-label i{
+    opacity: 1;
+
+}
+.accordion-body{
+    font-size: 0.8rem;
+    color: gray;
+}
+
+
+@media (max-width: 768px){
+    .product-small img{
+        max-width: 10rem;
+    }
+}
+
+
+
+/* ==========cart page========== */
+
+.cart-item{
+    border: 1px solid gray;
+}
+.order{
+    border: 1px solid gray;
+}
+
+.close:hover{
+    color: red;
+}
+.close i{
+    font-size: 1.5rem;
+}
+
+
+
+
+/* ===========login page============ */
+
+.login-box{
+    background-color: rgb(229, 229, 229);
+    border-radius: 20px;
+    padding: 2rem;
+}
+a.logo{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========Succes page========= */
+.succes-icon{
+    font-size: 100px;
+}
+/* .bbb{
+    border 2px solid red;
+} */
